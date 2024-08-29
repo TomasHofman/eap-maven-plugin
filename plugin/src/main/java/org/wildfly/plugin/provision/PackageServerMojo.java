@@ -703,4 +703,8 @@ public class PackageServerMojo extends AbstractProvisionServerMojo {
         return includeScope ? filter : artifact -> !filter.include(artifact);
     }
 
+    @Override
+    protected void enrichRepositories() throws MojoExecutionException {
+        // NO-OP
+    }
 }
