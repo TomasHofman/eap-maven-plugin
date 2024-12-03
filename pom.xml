@@ -241,6 +241,12 @@
                 <groupId>org.apache.maven</groupId>
                 <artifactId>maven-core</artifactId>
                 <version>${version.org.apache.maven.maven-core}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.commons</groupId>
+                        <artifactId>commons-lang3</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.apache.maven</groupId>
